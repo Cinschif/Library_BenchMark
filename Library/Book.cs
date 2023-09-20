@@ -19,7 +19,7 @@ namespace Library
         public Editor Editor { get; set; }
 
 
-        public string GetData()
+        public string GetBookInfo()
         {
             string data = "This book is " + Name + " and talks about " + Resume + ". " + "Wrote by " + Author;
             return data;
@@ -32,8 +32,10 @@ namespace Library
         }
 
         public bool HasEditor()
-        { 
-            return true;
+        {
+            Console.WriteLine("This Book has an Editor? If Yes,type True, if No, Type False ");
+            bool haseditor = Convert.ToBoolean(Console.ReadLine());
+            return haseditor;
         }
         
     }

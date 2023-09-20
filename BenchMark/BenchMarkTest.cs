@@ -21,13 +21,13 @@ namespace Library
         } 
         
        [Benchmark]
-       public void BenchMarkShowData()=> book.GetData();
+       public void BenchMarkShowData()=> book.GetBookInfo();
        
        [Benchmark]
         public void BenchMarkShowPages() => book.GetPages(); 
         
-        [Benchmark]
-        public void BenchMarkHasEditor() => book.HasEditor();
+       // [Benchmark]
+      //  public void BenchMarkHasEditor() => book.HasEditor();
  
         [Benchmark]
         public void BenchMarkShowInfo() => editor.ShowInfo();

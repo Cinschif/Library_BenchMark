@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_Fundamentals", "C#_Fundamentals\CSharp_Fundamentals.csproj", "{B3127450-BE27-441D-8A75-95013009E5DA}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{FC828D2F-B9EF-4229-A26E-C269FBDB9054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchMark", "BenchMark\BenchMark.csproj", "{63F13DE7-417A-4D8A-BAFB-01A12B3DD93A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchMark", "BenchMark\BenchMark.csproj", "{63F13DE7-417A-4D8A-BAFB-01A12B3DD93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3127450-BE27-441D-8A75-95013009E5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3127450-BE27-441D-8A75-95013009E5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3127450-BE27-441D-8A75-95013009E5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3127450-BE27-441D-8A75-95013009E5DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC828D2F-B9EF-4229-A26E-C269FBDB9054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC828D2F-B9EF-4229-A26E-C269FBDB9054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC828D2F-B9EF-4229-A26E-C269FBDB9054}.Release|Any CPU.ActiveCfg = Release|Any CPU
