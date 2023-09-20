@@ -10,17 +10,15 @@ namespace Library
         public BenchMarkTest() 
         {
             book = new Book();
-            book.name = " Harry Potter";
-            book.resume = " A boy that survived";
-            book.author = "J.k.Rooling";
-            book.pages = 435;
+            book.Name = " Harry Potter";
+            book.Resume = " A boy that survived";
+            book.Author = "J.k.Rooling";
+            book.Pages = 435;
            
            
-            editor = new Editor();
-            editor.name = "John";
-            editor.phoneNumber = " 76767-989";
-            editor.site = "jsdhfjehriehriekdeow";
-           } 
+            editor = new Editor("O Arqueiro", "4567-7899","www.oarqueiro.com");
+
+        } 
         
        [Benchmark]
        public void BenchMarkShowData()=> book.GetData();
@@ -29,8 +27,10 @@ namespace Library
         public void BenchMarkShowPages() => book.GetPages(); 
         
         [Benchmark]
+        public void BenchMarkHasEditor() => book.HasEditor();
+ 
+        [Benchmark]
         public void BenchMarkShowInfo() => editor.ShowInfo();
-
 
     }
 }

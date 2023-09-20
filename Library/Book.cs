@@ -12,24 +12,29 @@ namespace Library
 {
     public class Book
     {
-        public string name;
-        public string resume;
-        public double value;
-        public int pages;
-        public string author;
-        
+        public string Name { get; set; }
+        public string Resume { get; set; }
+        public int Pages { get; set; }
+        public string Author { get; set; }
+        public Editor Editor { get; set; }
+
+
         public string GetData()
         {
-            string data = " This book is " + name + " and talks about " + resume + ". " + "Wrote by " + author;
+            string data = "This book is " + Name + " and talks about " + Resume + ". " + "Wrote by " + Author;
             return data;
         }
-
-      
         public string GetPages()
 
         {
-            string page = " This book contains " + Convert.ToInt32(pages);
+            string page = "This book contains " + Convert.ToInt32(Pages) + ".";
             return page;
         }
+
+        public bool HasEditor()
+        { 
+            return true;
+        }
+        
     }
 }

@@ -8,14 +8,25 @@ namespace Library
 {
     public  class Editor
     {
-        public string name;
-        public string site;
-        public string phoneNumber;
+        //permite acessar os parametros privados
+        public string Name { get; set; }
+        public string Site { get; set; }
+        public string PhoneNumber { get; set; }
+
+        //construtor
+        public Editor(string name, string site, string phoneNumber)
+        {
+            this.Name = name;
+            this.Site = site;
+            this.PhoneNumber = phoneNumber;
+        }
+        //metodo
         public void ShowInfo()
         {
-            Console.WriteLine("Author name: " + name);
-            Console.WriteLine("Author site: " + site);
-            // Console.WriteLine("Author phone number: " + phoneNumber);
+            Console.WriteLine("Editor name: " + Name);
+            Console.WriteLine("Editor site: " + Site);
+            Console.WriteLine("Editor phone number: " + PhoneNumber);
         }
     }
 }
+
