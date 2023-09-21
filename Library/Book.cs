@@ -18,8 +18,20 @@ namespace Library
         public string Author { get; set; }
         public Editor Editor { get; set; }
 
+        public Book(string name, string resume, int pages, string author)
+        {
+            this.Name = name;
+            this.Resume = resume;
+            this.Pages = pages;
+            this.Author = author;
+        }
+        public Book(Editor editor) 
+        {
+            Editor = editor;
+        }
 
-        public string GetBookInfo()
+        //metodo preparado para passar a herança para a classe filha
+        public virtual string GetBookInfo()
         {
             string data = "This book is " + Name + " and talks about " + Resume + ". " + "Wrote by " + Author;
             return data;
