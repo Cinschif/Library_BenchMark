@@ -10,19 +10,15 @@ namespace Library
           
             User user = new User("Cin", "cinvet01@gmail.com", "6789-9009");  
            
-            Book book=new Book(" Harry Potter", "A boy that survived", 435, "J.K.Roolink");
+          PocketBook pocketbook=new PocketBook();
            
             Editor editor = new Editor("O Arqueiro", "www.oarqueiro.com","4567 - 7899");
             
-            DigitalBook digitalBook = new DigitalBook("A colmeia", "Historia de uma abelha", 25, "mamae", "marcadagua");
+            PaperBook paperbook = new PaperBook("A colmeia", "Historia de uma abelha", 25, "mamae");
 
-            //Console.WriteLine(user.GetUserInfo());
-            //Console.WriteLine(book.GetBookInfo());
-            //Console.WriteLine(book.GetPages());
-            //Console.WriteLine(digitalBook.GetDigitalBookInfo());
 
-            Console.WriteLine( digitalBook.GetBookInfo());
-           // Console.WriteLine(digitalBook.GetPages());
+            Console.WriteLine(paperbook.GetBookInfo());
+           Console.WriteLine(pocketbook.GetBookInfo());
            
             //editor.ShowInfo();
 

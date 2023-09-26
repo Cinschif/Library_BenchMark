@@ -14,6 +14,11 @@ namespace Library
         public string PhoneNumber { get; set; }
 
         //construtor
+
+        public Editor()
+        {
+
+        }
         public Editor(string name, string site, string phoneNumber)
         {
             this.Name = name;

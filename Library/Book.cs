@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using BenchmarkDotNet.Attributes;
-using Library;
+using Library.Enums;
 using Microsoft.VisualBasic;
 
 namespace Library
 {
-    public class Book
+    public abstract class Book
     {
         public string Name { get; set; }
         public string Resume { get; set; }
@@ -18,6 +18,10 @@ namespace Library
         public string Author { get; set; }
         public Editor Editor { get; set; }
 
+        public Book()
+        {
+
+        }
         public Book(string name, string resume, int pages, string author)
         {
             this.Name = name;
@@ -31,11 +35,7 @@ namespace Library
         }
 
         //metodo preparado para passar a herança para a classe filha
-        public virtual string GetBookInfo()
-        {
-            string data = "This book is " + Name + " and talks about " + Resume + ". " + "Wrote by " + Author;
-            return data;
-        }
+        public abstract string GetBookInfo();
         public string GetPages()
 
         {
@@ -49,6 +49,7 @@ namespace Library
             bool haseditor = Convert.ToBoolean(Console.ReadLine());
             return haseditor;
         }
-        
+
+        public abstract ETypeBook GetBookType();
     }
 }
